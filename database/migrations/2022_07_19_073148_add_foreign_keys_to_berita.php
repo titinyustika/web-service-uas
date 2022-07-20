@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('berita', function (Blueprint $table) {
-            $table->foreign('category_id')->references('id')->on('category');
+            $table->foreign('category_id')->references('id')->on('category')->onDelete('cascade');
         });
     }
 

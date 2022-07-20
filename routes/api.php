@@ -21,13 +21,16 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
+
 // bisa di akses dengan harus login dan membawa token yg di dapat di jwt saat login
 Route::group(['middleware' => ['auth:api']], function () {
 
     // route berita
     Route::apiResource('/news', App\Http\Controllers\Api\BeritaController::class);
     Route::apiResource('/category', App\Http\Controllers\Api\CategoryController::class);
+
     Route::apiResource('/tag', App\Http\Controllers\Api\TagController::class);
+
 
     Route::post('/logout', App\Http\Controllers\Api\LogoutController::class)->name('logout');
 });

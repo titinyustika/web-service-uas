@@ -16,7 +16,7 @@
     </head>
     <body>
         <article>
-            <h1>WELCOME.</h1>
+            <h1>WELCOME MY RESTFUL API WEB SERVICES.</h1>
             <p>Develope by : Titin yustika</p>
             <p>web ini adalah service berita</p>
             <span>untuk yang mau memakai restpul api ini bisa kontak saya !!</span>
